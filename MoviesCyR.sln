@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesCyR", "MoviesCyR\MoviesCyR.csproj", "{BB290D52-E2B4-4BE8-9EA4-6D0E43018A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{19601FB3-66D7-469B-8319-E7F92A8D90B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{4077FCB2-09DC-407B-91E2-90ABA8D3F8E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB290D52-E2B4-4BE8-9EA4-6D0E43018A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB290D52-E2B4-4BE8-9EA4-6D0E43018A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB290D52-E2B4-4BE8-9EA4-6D0E43018A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB290D52-E2B4-4BE8-9EA4-6D0E43018A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19601FB3-66D7-469B-8319-E7F92A8D90B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19601FB3-66D7-469B-8319-E7F92A8D90B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19601FB3-66D7-469B-8319-E7F92A8D90B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19601FB3-66D7-469B-8319-E7F92A8D90B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4077FCB2-09DC-407B-91E2-90ABA8D3F8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4077FCB2-09DC-407B-91E2-90ABA8D3F8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4077FCB2-09DC-407B-91E2-90ABA8D3F8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4077FCB2-09DC-407B-91E2-90ABA8D3F8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

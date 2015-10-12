@@ -123,6 +123,36 @@ namespace MoviesCyR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1444503163_video {
+            get {
+                object obj = ResourceManager.GetObject("1444503163_video", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1444674093_folder_search {
+            get {
+                object obj = ResourceManager.GetObject("1444674093_folder-search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1444681843_Gnome_Edit_Clear_64 {
+            get {
+                object obj = ResourceManager.GetObject("1444681843_Gnome-Edit-Clear-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Borrar {
             get {
                 object obj = ResourceManager.GetObject("Borrar", resourceCulture);
@@ -136,6 +166,16 @@ namespace MoviesCyR.Properties {
         internal static System.Drawing.Bitmap cine1 {
             get {
                 object obj = ResourceManager.GetObject("cine1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lapiz {
+            get {
+                object obj = ResourceManager.GetObject("Lapiz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -47,7 +47,7 @@
             this.hacercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(474, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(480, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,7 +69,7 @@
             // 
             this.buttonEliminar.Image = global::MoviesCyR.Properties.Resources._1444067756_1_04;
             this.buttonEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEliminar.Location = new System.Drawing.Point(368, 178);
+            this.buttonEliminar.Location = new System.Drawing.Point(261, 178);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(94, 48);
             this.buttonEliminar.TabIndex = 5;
@@ -82,7 +82,7 @@
             // 
             this.buttonCancelar.Image = global::MoviesCyR.Properties.Resources._1443813953_cancel;
             this.buttonCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonCancelar.Location = new System.Drawing.Point(249, 178);
+            this.buttonCancelar.Location = new System.Drawing.Point(374, 178);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 48);
             this.buttonCancelar.TabIndex = 3;
@@ -95,9 +95,9 @@
             // 
             this.buttonConsultar.Image = global::MoviesCyR.Properties.Resources._1443814210_fine_print;
             this.buttonConsultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonConsultar.Location = new System.Drawing.Point(131, 178);
+            this.buttonConsultar.Location = new System.Drawing.Point(139, 178);
             this.buttonConsultar.Name = "buttonConsultar";
-            this.buttonConsultar.Size = new System.Drawing.Size(94, 48);
+            this.buttonConsultar.Size = new System.Drawing.Size(99, 48);
             this.buttonConsultar.TabIndex = 2;
             this.buttonConsultar.Text = "Consultar";
             this.buttonConsultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -122,7 +122,7 @@
             this.pictureBox1.Image = global::MoviesCyR.Properties.Resources.cine1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(472, 223);
+            this.pictureBox1.Size = new System.Drawing.Size(482, 226);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 251);
+            this.ClientSize = new System.Drawing.Size(480, 251);
             this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonConsultar);
@@ -140,6 +140,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Principal";
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

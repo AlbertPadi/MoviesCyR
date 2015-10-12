@@ -33,8 +33,8 @@ namespace MoviesCyR
         
             pelicula.Titulo = textBoxTitulo.Text;
             pelicula.Descripcion = textBoxDescripcion.Text;                     
-            pelicula.Ano = Convert.ToInt32(textBoxAno.Text );                   
-            pelicula.Calificacion = Convert.ToInt32(textBoxCalificacion.Text ); 
+            pelicula.Ano = Convert.ToInt32(textBoxAno.Text);                   
+            pelicula.Calificacion = Convert.ToInt32(textBoxCalificacion.Text); 
             pelicula.IMDB = Convert.ToInt32(textBoxIMDB.Text);                  
             pelicula.CategoriapId = Convert.ToInt32(textBoxCategoriaId.Text);   
 
@@ -44,11 +44,44 @@ namespace MoviesCyR
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            textBoxTitulo.Text = "";
+            textBoxDescripcion.Text = "";
+            textBoxAno.Text = "";
+            textBoxCalificacion.Text = "";
+            textBoxIMDB.Text = "";
+            textBoxCategoriaId.Text = "";
         }
 
         private void textBoxTitulo_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void Actualizarbutton_Click(object sender, EventArgs e)
+        {
+            Pelicula peli = new Pelicula();
+            peli.Titulo = textBoxTitulo.Text;
+            peli.Descripcion = textBoxDescripcion.Text;
+            peli.Ano = Convert.ToInt32(textBoxAno.Text);
+            peli.Calificacion = Convert.ToInt32(textBoxCalificacion.Text);
+            peli.IMDB = Convert.ToInt32(textBoxIMDB.Text);
+            peli.CategoriapId = Convert.ToInt32(textBoxCategoriaId.Text);
+
+            if (pelicula.Actualizar(Convert.ToInt32(textBoxCategoriaId.Text)))
+            {
+                MessageBox.Show("Se ha modificado");
+            }
+            else
+            {
+                MessageBox.Show("No se pudo modificar");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenopenFileDialog.ShowDialog();
+
+            OpenpictureBox.ImageLocation = OpenopenFileDialog.FileName;
 
         }
     }

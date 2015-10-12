@@ -16,7 +16,7 @@ namespace DAL
 
         public Conexion()
         {
-            con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=Movies;Integrated Security=True");
+            con = new SqlConnection("Data Source=APACHEW-PC;Initial Catalog=MoviesCyR;Integrated Security=True");
             cmd = new SqlCommand();
         }
 

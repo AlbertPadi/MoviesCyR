@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MoviesCyR.Eliminar;
+
 namespace MoviesCyR
 {
     /// <summary>
@@ -52,6 +53,16 @@ namespace MoviesCyR
         {
             Eliminar.Eliminar ee = new Eliminar.Eliminar();
             ee.Show();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Reproducirbutton_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

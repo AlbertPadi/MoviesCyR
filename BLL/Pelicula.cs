@@ -8,7 +8,7 @@ using System.Data;
 
 namespace BLL
 {
-    public class Pelicula
+    public class Pelicula: ClaseMaestra
     {
         Conexion con = new Conexion();
 
@@ -37,7 +37,7 @@ namespace BLL
 
             
 
-            con.Ejecutar(String.Format("Insert Into Registro (Titulo, Descripcion, Ano, Calificacion, IMDB, CategoriaId) Values('{0}','{1}', {2}, {3}, {4}, {5})", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.IMDB, this.CategoriapId));
+            con.Ejecutar(String.Format("Insert Into Registro (titulo, Descripcion, Ano, calificacion, IMDB, CategoriaId) Values('{0}','{1}', {2}, {3}, {4}, {5})", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.IMDB, this.CategoriapId));
 
 
             return paso;
@@ -56,6 +56,20 @@ namespace BLL
             return con.Ejecutar(String.Format("Delete from Registro where PeliculaId ={0}", CategoriapId));
            
         }
-     }
+
+        public override bool Actualizar(int PeliculaId)
+        {
+            try
+            {
+                return con.Ejecutar(String.Format("Update Registro set titulo = '{0}', Descripcion = '{1}', Ano={2}, calificacion = {3}, IMDB = {4}, CategoriaId = {5}", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.IMDB, this.CategoriapId));
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        
+    }
 }
 

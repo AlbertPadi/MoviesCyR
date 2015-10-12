@@ -31,17 +31,7 @@ namespace BLL
             this.CategoriapId = 0;
         }
 
-        public bool Insert()
-        {
-            bool paso = false;
-
-            
-
-            con.Ejecutar(String.Format("Insert Into Registro (titulo, Descripcion, Ano, calificacion, IMDB, CategoriaId) Values('{0}','{1}', {2}, {3}, {4}, {5})", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.IMDB, this.CategoriapId));
-
-
-            return paso;
-        }
+      
 
        
 
@@ -50,12 +40,7 @@ namespace BLL
             return con.getDatos("Select" + campos + "from Registro where " + Filtro);
         }
 
-        public bool Delete()
-        {
-            
-            return con.Ejecutar(String.Format("Delete from Registro where PeliculaId ={0}", CategoriapId));
-           
-        }
+        
 
         public override bool Actualizar(int PeliculaId)
         {
@@ -69,7 +54,22 @@ namespace BLL
             }
         }
 
-        
+        public override bool Insert()
+        {
+            bool paso = false;
+
+
+
+            con.Ejecutar(String.Format("Insert Into Registro (titulo, Descripcion, Ano, calificacion, IMDB, CategoriaId) Values('{0}','{1}', {2}, {3}, {4}, {5})", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.IMDB, this.CategoriapId));
+
+
+            return paso;
+        }
+
+        public override bool Delete()
+        {
+            return con.Ejecutar(String.Format("Delete from Registro where PeliculaId ={0}", CategoriapId));
+        }
     }
 }
 

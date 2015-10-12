@@ -10,6 +10,8 @@ namespace BLL
     public abstract class ClaseMaestra
     {
         public abstract bool Actualizar(int PeliculaId);
-
+        public abstract bool Insert();
+        public abstract bool Delete();
+      
     }
 }

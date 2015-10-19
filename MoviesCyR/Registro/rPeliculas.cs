@@ -13,24 +13,43 @@ namespace MoviesCyR
 {
     public partial class FormRegistro : Form
     {
+        BLL.Actores actores = new BLL.Actores();
+        BLL.Generos generos = new BLL.Generos();
+        BLL.Estudios estudios = new BLL.Estudios();
 
         private Pelicula pelicula = new Pelicula();
+
 
 
         public FormRegistro()
         {
             InitializeComponent();
+                 
     }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            for (int i = 0; i < actores.Listar("Nombre", "1=1").Rows.Count; i++)
+            {
+                ActorescomboBox.Items.Add(actores.Listar("Nombre", "1=1").Rows[i]["Nombre"]);
+            }
 
+            for (int i = 0; i < generos.Listar("Descripcion", "1=1").Rows.Count; i++)
+            {
+                GenerocomboBox.Items.Add(generos.Listar("Descripcion", "1=1").Rows[i]["Descripcion"]);
+            }
+            for (int i = 0; i < estudios.Listar("Nombre", "1=1").Rows.Count; i++)
+            {
+                EstudioscomboBox.Items.Add(estudios.Listar("Nombre", "1=1").Rows[i]["Nombre"]);
+            }
         }
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            
-        
+
+            pelicula.Generos = AdGenerolistBox.Text;
+            pelicula.Actores = ActorescomboBox.Text;
+            pelicula.Estudio = EstudioscomboBox.Text;
             pelicula.Titulo = textBoxTitulo.Text;
             pelicula.Descripcion = textBoxDescripcion.Text;                     
             pelicula.Ano = Convert.ToInt32(textBoxAno.Text);                   
@@ -67,14 +86,9 @@ namespace MoviesCyR
             peli.IMDB = Convert.ToInt32(textBoxIMDB.Text);
             peli.CategoriapId = Convert.ToInt32(textBoxCategoriaId.Text);
 
-            if (pelicula.Actualizar(Convert.ToInt32(textBoxCategoriaId.Text)))
-            {
-                MessageBox.Show("Se ha modificado");
-            }
-            else
-            {
-                MessageBox.Show("No se pudo modificar");
-            }
+            pelicula.CategoriapId = Convert.ToInt32(textBoxCategoriaId.Text);
+
+            peli.Actualizar();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -82,6 +96,21 @@ namespace MoviesCyR
             OpenopenFileDialog.ShowDialog();
 
             OpenpictureBox.ImageLocation = OpenopenFileDialog.FileName;
+
+        }
+
+        private void Agregarbutton_Click(object sender, EventArgs e)
+        {
+            AdGenerolistBox.Items.Add(GenerocomboBox.Text);
+        }
+
+        private void Agregar1button_Click(object sender, EventArgs e)
+        {
+            AddActoreslistBox.Items.Add(ActorescomboBox.Text);
+        }
+
+        private void EstudioscomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

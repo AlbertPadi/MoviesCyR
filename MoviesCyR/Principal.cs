@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MoviesCyR.Eliminar;
+using MoviesCyR.Generos;
+using MoviesCyR.Actores;
+using MoviesCyR.Estudios;
 
 namespace MoviesCyR
 {
@@ -17,6 +20,7 @@ namespace MoviesCyR
     /// </summary>
     public partial class Principal : Form
     {
+       
         public Principal()
         {
             InitializeComponent();
@@ -63,6 +67,30 @@ namespace MoviesCyR
         private void Reproducirbutton_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Generosbutton_Click(object sender, EventArgs e)
+        {
+            GenerosPeli gp = new GenerosPeli();
+            gp.Show();
+            
+        }
+
+        private void Actoresbutton_Click(object sender, EventArgs e)
+        {
+            RegistroAutores RA = new RegistroAutores();
+            RA.Show();
+        }
+
+        private void Estudiosbutton_Click(object sender, EventArgs e)
+        {
+            RegistroEstudios Re = new RegistroEstudios();
+            Re.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

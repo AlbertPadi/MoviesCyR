@@ -45,14 +45,14 @@
             this.dataGridViewConsulta.Location = new System.Drawing.Point(12, 100);
             this.dataGridViewConsulta.Name = "dataGridViewConsulta";
             this.dataGridViewConsulta.ReadOnly = true;
-            this.dataGridViewConsulta.Size = new System.Drawing.Size(737, 238);
+            this.dataGridViewConsulta.Size = new System.Drawing.Size(952, 238);
             this.dataGridViewConsulta.TabIndex = 0;
             // 
             // buttonConsultar
             // 
             this.buttonConsultar.Image = global::MoviesCyR.Properties.Resources._1443814210_fine_print;
             this.buttonConsultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonConsultar.Location = new System.Drawing.Point(512, 12);
+            this.buttonConsultar.Location = new System.Drawing.Point(585, 12);
             this.buttonConsultar.Name = "buttonConsultar";
             this.buttonConsultar.Size = new System.Drawing.Size(101, 46);
             this.buttonConsultar.TabIndex = 1;
@@ -82,14 +82,14 @@
             // 
             this.textBoxFiltro.Location = new System.Drawing.Point(139, 36);
             this.textBoxFiltro.Name = "textBoxFiltro";
-            this.textBoxFiltro.Size = new System.Drawing.Size(358, 20);
+            this.textBoxFiltro.Size = new System.Drawing.Size(426, 20);
             this.textBoxFiltro.TabIndex = 3;
             // 
             // buttonSalir
             // 
             this.buttonSalir.Image = global::MoviesCyR.Properties.Resources._1443813953_cancel;
             this.buttonSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonSalir.Location = new System.Drawing.Point(634, 14);
+            this.buttonSalir.Location = new System.Drawing.Point(704, 14);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(101, 44);
             this.buttonSalir.TabIndex = 4;
@@ -102,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 350);
+            this.ClientSize = new System.Drawing.Size(976, 350);
             this.Controls.Add(this.buttonSalir);
             this.Controls.Add(this.textBoxFiltro);
             this.Controls.Add(this.comboBoxFiltr);

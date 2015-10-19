@@ -47,7 +47,7 @@ namespace MoviesCyR.Consulta
                 }
                 
 
-                dt = p.Listar(" PeliculaId, titulo, descripcion, Ano, calificacion, IMDB, CategoriaId ", filtro);
+                dt = p.Listar(" PeliculaId, titulo, descripcion, Ano, calificacion, IMDB, CategoriaId, Generos, Actores, Estudio ", filtro);
                 dataGridViewConsulta.DataSource = dt;
             }
             if (comboBoxFiltr .SelectedIndex == 2)
@@ -56,7 +56,7 @@ namespace MoviesCyR.Consulta
                 {
                     filtro = "3=3";
                 }
-                dt = p.Listar(" PeliculaId, titulo, descripcion, Ano, calificacion, IMDB, CategoriaId ", filtro);
+                dt = p.Listar(" PeliculaId, titulo, descripcion, Ano, calificacion, IMDB, CategoriaId, Generos, Actores, Estudio ", filtro);
                 dataGridViewConsulta.DataSource = dt;
             }
                

@@ -42,6 +42,9 @@ namespace BLL
              return con.getDatos("Select " + campos + " from Generos where " + Filtro);
         }
 
-        
+        public override bool Buscar(int IdBuscado)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

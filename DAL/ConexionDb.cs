@@ -73,5 +73,32 @@ namespace DAL
 
             return dt;
         }
+
+        public object ObtenerValor(String ComandoSql)
+        {
+            object retorno = null;
+
+            try
+            {
+                con.Open();
+                cmd.Connection = con;
+                cmd.CommandText = ComandoSql;
+                retorno = cmd.ExecuteScalar();
+                retorno = true;
+                
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            finally
+            {
+                con.Close();
+            }
+
+            return retorno;
+
+        }
     }
 }

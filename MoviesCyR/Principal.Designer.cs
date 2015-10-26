@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hacercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Estudiosbutton = new System.Windows.Forms.Button();
             this.Actoresbutton = new System.Windows.Forms.Button();
             this.Generosbutton = new System.Windows.Forms.Button();
             this.buttonEliminar = new System.Windows.Forms.Button();
@@ -38,7 +39,7 @@
             this.buttonConsultar = new System.Windows.Forms.Button();
             this.buttonRegistrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Estudiosbutton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,15 +65,28 @@
             // hacercaDeToolStripMenuItem
             // 
             this.hacercaDeToolStripMenuItem.Name = "hacercaDeToolStripMenuItem";
-            this.hacercaDeToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
-            this.hacercaDeToolStripMenuItem.Text = "Hacerca de";
+            this.hacercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.hacercaDeToolStripMenuItem.Text = "Acerca de";
             this.hacercaDeToolStripMenuItem.Click += new System.EventHandler(this.hacercaDeToolStripMenuItem_Click);
+            // 
+            // Estudiosbutton
+            // 
+            this.Estudiosbutton.Image = global::MoviesCyR.Properties.Resources.movies;
+            this.Estudiosbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Estudiosbutton.Location = new System.Drawing.Point(17, 125);
+            this.Estudiosbutton.Name = "Estudiosbutton";
+            this.Estudiosbutton.Size = new System.Drawing.Size(94, 47);
+            this.Estudiosbutton.TabIndex = 10;
+            this.Estudiosbutton.Text = "Estudios";
+            this.Estudiosbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Estudiosbutton.UseVisualStyleBackColor = true;
+            this.Estudiosbutton.Click += new System.EventHandler(this.Estudiosbutton_Click);
             // 
             // Actoresbutton
             // 
             this.Actoresbutton.Image = global::MoviesCyR.Properties.Resources.Actor_Male_Light;
             this.Actoresbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Actoresbutton.Location = new System.Drawing.Point(197, 125);
+            this.Actoresbutton.Location = new System.Drawing.Point(144, 125);
             this.Actoresbutton.Name = "Actoresbutton";
             this.Actoresbutton.Size = new System.Drawing.Size(94, 47);
             this.Actoresbutton.TabIndex = 7;
@@ -85,7 +99,7 @@
             // 
             this.Generosbutton.Image = global::MoviesCyR.Properties.Resources._1444503163_video;
             this.Generosbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Generosbutton.Location = new System.Drawing.Point(319, 125);
+            this.Generosbutton.Location = new System.Drawing.Point(261, 125);
             this.Generosbutton.Name = "Generosbutton";
             this.Generosbutton.Size = new System.Drawing.Size(94, 47);
             this.Generosbutton.TabIndex = 6;
@@ -155,24 +169,25 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Estudiosbutton
+            // button1
             // 
-            this.Estudiosbutton.Image = global::MoviesCyR.Properties.Resources.movies;
-            this.Estudiosbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Estudiosbutton.Location = new System.Drawing.Point(79, 125);
-            this.Estudiosbutton.Name = "Estudiosbutton";
-            this.Estudiosbutton.Size = new System.Drawing.Size(94, 47);
-            this.Estudiosbutton.TabIndex = 10;
-            this.Estudiosbutton.Text = "Estudios";
-            this.Estudiosbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Estudiosbutton.UseVisualStyleBackColor = true;
-            this.Estudiosbutton.Click += new System.EventHandler(this.Estudiosbutton_Click);
+            this.button1.Image = global::MoviesCyR.Properties.Resources._1443814210_fine_print;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(374, 125);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 47);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Reporte";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 255);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Estudiosbutton);
             this.Controls.Add(this.Actoresbutton);
             this.Controls.Add(this.Generosbutton);
@@ -207,5 +222,6 @@
         private System.Windows.Forms.Button Generosbutton;
         private System.Windows.Forms.Button Actoresbutton;
         private System.Windows.Forms.Button Estudiosbutton;
+        private System.Windows.Forms.Button button1;
     }
 }

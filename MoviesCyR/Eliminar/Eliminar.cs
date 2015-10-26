@@ -15,7 +15,7 @@ namespace MoviesCyR.Eliminar
 {
     public partial class Eliminar : Form
     {
-        Pelicula p = new Pelicula();
+        Peliculas p = new Peliculas();
 
         public Eliminar()
         {

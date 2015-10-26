@@ -32,7 +32,7 @@ namespace MoviesCyR.Consulta
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            Pelicula p = new Pelicula();
+            Peliculas p = new Peliculas();
             DataTable dt = new DataTable();
             string filtro = "1=1";
             if (comboBoxFiltr.SelectedIndex == 0)
@@ -47,7 +47,7 @@ namespace MoviesCyR.Consulta
                 }
                 
 
-                dt = p.Listar(" PeliculaId, titulo, descripcion, Ano, calificacion, IMDB, CategoriaId, Generos, Actores, Estudio ", filtro);
+                dt = p.Listar(" PeliculaId, titulo, descripcion, Ano, calificacion, IMDB, CategoriaId, Estudio ", filtro);
                 dataGridViewConsulta.DataSource = dt;
             }
             if (comboBoxFiltr .SelectedIndex == 2)
@@ -56,7 +56,7 @@ namespace MoviesCyR.Consulta
                 {
                     filtro = "3=3";
                 }
-                dt = p.Listar(" PeliculaId, titulo, descripcion, Ano, calificacion, IMDB, CategoriaId, Generos, Actores, Estudio ", filtro);
+                dt = p.Listar(" PeliculaId, titulo, descripcion, Ano, calificacion, IMDB, CategoriaId, Estudio ", filtro);
                 dataGridViewConsulta.DataSource = dt;
             }
                

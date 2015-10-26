@@ -11,6 +11,7 @@ using MoviesCyR.Eliminar;
 using MoviesCyR.Generos;
 using MoviesCyR.Actores;
 using MoviesCyR.Estudios;
+using MoviesCyR.Reporte;
 
 namespace MoviesCyR
 {
@@ -20,7 +21,7 @@ namespace MoviesCyR
     /// </summary>
     public partial class Principal : Form
     {
-       
+
         public Principal()
         {
             InitializeComponent();
@@ -66,14 +67,14 @@ namespace MoviesCyR
 
         private void Reproducirbutton_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Generosbutton_Click(object sender, EventArgs e)
         {
             GenerosPeli gp = new GenerosPeli();
             gp.Show();
-            
+
         }
 
         private void Actoresbutton_Click(object sender, EventArgs e)
@@ -92,5 +93,15 @@ namespace MoviesCyR
         {
 
         }
-    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Reporte.Reporte var = new Reporte.Reporte();
+            BLL.Reporte rpt = new BLL.Reporte();
+
+            var.crystalReportViewer1.ReportSource = rpt;
+            var.ShowDialog();
+            
+        }
+    } 
 }

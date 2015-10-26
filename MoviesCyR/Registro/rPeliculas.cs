@@ -17,7 +17,7 @@ namespace MoviesCyR
         BLL.Generos generos = new BLL.Generos();
         BLL.Estudios estudios = new BLL.Estudios();
 
-        private Pelicula pelicula = new Pelicula();
+        private Peliculas pelicula = new Peliculas();
 
 
 
@@ -46,9 +46,6 @@ namespace MoviesCyR
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-
-            pelicula.Generos = AdGenerolistBox.Text;
-            pelicula.Actores = ActorescomboBox.Text;
             pelicula.Estudio = EstudioscomboBox.Text;
             pelicula.Titulo = textBoxTitulo.Text;
             pelicula.Descripcion = textBoxDescripcion.Text;                     
@@ -78,7 +75,7 @@ namespace MoviesCyR
 
         private void Actualizarbutton_Click(object sender, EventArgs e)
         {
-            Pelicula peli = new Pelicula();
+            Peliculas peli = new Peliculas();
             peli.Titulo = textBoxTitulo.Text;
             peli.Descripcion = textBoxDescripcion.Text;
             peli.Ano = Convert.ToInt32(textBoxAno.Text);

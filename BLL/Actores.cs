@@ -19,7 +19,13 @@ namespace BLL
                 {
                     this.ActorId = 0;
                     this.Nombre = "";
-                }
+                        }
+        public Actores(int Id, string Nombre)
+        {
+            this.ActorId = Id;
+            this.Nombre = Nombre;
+
+        }
         public override bool Insert()
         {
             return con.Ejecutar(String.Format("insert into Actores (Nombre) Values('{0}')", this.Nombre));
@@ -40,6 +46,11 @@ namespace BLL
             return con.getDatos("Select "+ campos + " From Actores where "+ Filtro);
         }
 
-       
+        public override bool Buscar(int IdBuscado)
+        {
+            throw new NotImplementedException();
+        }
+
+        
     }
 }
